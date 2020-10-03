@@ -60,22 +60,26 @@ li a.active {
 }
 
 .sidenav {
-  width: 150px;
+  width: 140px;
   background-color: #e7e7e7;
   border: 1px solid #707070;
-  margin: 5px 0px;
-  text-align: center;
-  height: 35%;
+  margin: 5px 0px 10px 0px;
+  text-align: leftx;
+  height: auto;
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
-  padding: 0px 5px 0px 2px;
+  padding: 0px 5px 20px 5px;
+}
+.sidenav h2 {
+  font-size: 20px;
+  color: #1b203d;
 }
 
 .sidenav a {
-  padding: 10px 8px 6px 10px;
+  padding: 5px 8px 6px 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   color: #fab038;
   display: block;
 }
@@ -87,4 +91,25 @@ li a.active {
 .main {
   margin-left: 160px;
   padding: 0px 10px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px;
+  width: 98.8%;
+}
+
+.text-block h1 {
+  color: #fff;
+  text-align: center;
 }
