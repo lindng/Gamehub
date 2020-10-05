@@ -1,136 +1,134 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap)
+    format ("Oswald");
+}
+
 body {
   background-color: white;
   font-family: "open sans", "verdana", "sans-serif";
 }
 
-h1,
-h2,
-h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+h1 {
+  font-family: Oswold, sans-serif;
   color: #000;
+  font-size: 40px;
 }
-.logo-image {
-  width: 110px;
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 15px;
+}
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #bac5cf;
+  color: white;
+  font-size: 30px;
+}
+.logo-header {
+  max-width: 500px;
   border-radius: 0%;
   margin: 1px 1px 1px 5px;
+  float: center;
+  background-color: #bac5cf;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #1b203d;
+  overflow: hidden;
+}
+.navbar a {
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 25px;
+  text-decoration: none;
   float: left;
+  font-size: 17px;
+}
+.dropdown a {
+  color: #ffffff;
+  text-align: center;
+  padding: 11px 16px;
+  text-decoration: none;
+  float: left;
+  font-size: 17px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 11px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #fab038;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:#fab038;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: 1px solid #e7e7e7;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 ul {
   list-style-type: none;
   margin: auto;
-  padding: 5px;
+  padding: 15px;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #bac5cf;
-  position: sticky;
-}
-li {
-  float: right;
-}
-
-li a {
-  color: #1b203d;
-  display: block;
+  background-color: #1b203d;
+  border-radius: 0px 0px 5px 0px;
   text-align: center;
-  padding: 10px;
-  margin: 1px 8px 1px 0px;
-  text-decoration: none;
 }
-li a:hover:not(.active) {
-  text-decoration: underline;
 }
-
-li a.active {
+.navbar a.active {
   text-decoration: underline;
 }
 
 .active {
   text-decoration: underline;
+  color: #fff;
 }
-
-.icons {
-  width: 25px;
-  padding: -10px;
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: -4px;
-}
-.searchbar input[type="text"] {
-  float: left;
-  padding: 8px 45px 10px 5px;
-  border: none;
-  margin: 20px 0px 10px 45px;
-  font-size: 15px;
-}
-@media screen and (max-width: 450px) {
-  .searchbar a,
-  .searchbar input[type="text"] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type="text"] {
-    border: 1px solid #ccc;
-  }
-}
-.sidenav {
-  width: 140px;
-  background-color: #e7e7e7;
-  border: 1px solid #707070;
-  margin: 5px 0px 10px 0px;
-  text-align: leftx;
-  height: auto;
-  position: fixed;
-  z-index: 1;
-  overflow-x: hidden;
-  padding: 0px 5px 20px 5px;
-}
-.sidenav h2 {
-  font-size: 20px;
-  color: #1b203d;
-}
-
-.sidenav a {
-  padding: 5px 8px 6px 10px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #fab038;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #1b203d;
-}
-.sidenav a:active {
-  text-decoration: underline;
+.class {
+  padding: 10px;
 }
 
 .main {
-  margin-left: 160px;
-  padding: 0px 10px;
+  margin: 10px;
 }
-
-.container {
-  position: relative;
-  max-width: 100%;
-  margin: 10px 0px 10px 0px;
-}
-
-.text-block {
-  position: absolute;
-  bottom: 0px;
-  background: #000;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 5px;
-  width: 98.8%;
-}
-
-.text-block h1 {
-  color: #fff;
-  text-align: center;
+.text-picture {
+  max-width: 350px;
+  float: right;
+  margin: 0px 20px 0px 20px;
+  border-radius: 1%;
 }
