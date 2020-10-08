@@ -1,141 +1,135 @@
-@font-face {
-  font-family: "Oswald";
-  src: url(https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap)
-    format ("Oswald");
-}
-html,
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 body {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #bac5cf;
+  font-family: "oswald", sans-serif;
 }
-h1,
-h2,
-h3 {
-  font-family: "Oswald";
-  font-weight: bold;
-  text-decoration: underline;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 header {
-  width: 100%;
-  margin: 0 auto;
-}
-
-nav {
-  padding: 0px;
-  margin: 0px 0px 0px 0px;
-  background-image: url(https://images.unsplash.com/photo-1579264435938-ea1882f6d762?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
-  width: 100%;
-}
-
-.profile {
-  text-align: right;
-}
-.profile a {
-  background-color: #1b203d;
-  color: #ffffff;
-  padding: 10px;
-  text-align: right;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  border-radius: 5px;
-}
-ul {
-  background-color: #1b203d;
-  padding: 10px;
-  text-align: center;
-  margin-top: 25px;
-  width: 100%;
-  border-radius: 5px;
-}
-
-ul a {
-  padding: 10px 25px;
-  text-align: center;
-  margin-left: 15px;
-  margin-right: 10px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: sans-serif;
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-a:hover {
-  color: #fab028;
-  border: 2px outset #fab028;
-}
-
-a:active {
-  color: #fab028;
-  font-weight: bold;
+  background-color: #bac5cf;
+  min-height: 80px;
 }
 .logo {
-  text-align: center;
+  max-width: 100px;
+  margin: 8px 25px 0px 5px;
+}
+
+/* navbar hamburger-menu */
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1b203d;
   padding: 10px;
+  display: block;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.hamburger-label {
+  float: right;
+  color: #1b203d;
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+.ikons {
+  padding: 10px;
+  font-size: 1.5em;
+  display: inline-block;
+  float: right;
+}
+
+.ikons a {
+  color: #1b203d;
+  padding: 2px;
+}
+
+.ikons a:hover {
+  color: #fab038;
+}
+
+@media (min-width: 700px) {
+  .logo {
+    float: left;
+  }
+  nav {
+    display: inline-block;
+  }
+  .hamburger-label {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+  li {
+    display: inline-block;
+    margin: 0px 0px;
+  }
+  nav a {
+    padding: 2px 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .ikons {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    color: #1b203d;
+    float: right;
+    display: block;
+  }
+}
+
+/* Header image with text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
   width: 100%;
+  font-family: "Oswald", sans-serif;
 }
-.searchbar {
-  text-align: center;
-  padding: 5px;
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 0px;
+  font-size: 40px;
 }
-
-.searchbar input[type="text"] {
-  text-align: center;
-  padding: 10px;
-  margin-top: 0px;
-  margin-left: 0px;
-  font-size: 17px;
-  width: 300px;
-  border: 1px solid #fab028;
-  color: #ffffff;
-  border-radius: 10px 0px 0px 10px;
-}
-.searchbar button {
-  float: center;
-  padding: 10px;
-  margin-top: 8px;
-  margin-right: 0px;
-  margin-left: 0px;
-  background: #fab028;
-  color: #ffffff;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  border-radius: 0px 10px 10px 0px;
-  width: 100px;
+.container .bottom-left {
+  position: absolute;
+  bottom: 30;
+  background: rgb(0, 0, 0);
+  background: rgba(10, 10, 10, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px 0px;
 }
 
-.content-wrap {
-  width: 900px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  text-align: justify;
-  text-align: left;
+/* Main .section .intro*/
+main {
+  margin: 30px;
 }
-
-h1 {
-  font-size: 25px;
-  margin-top: 0;
-}
-
-.intro {
-  background-color: #000;
-}
-
-.preorder .preorder-img {
-  width: 150px;
-  float: left;
-  margin-right: 30px;
+#img-intro {
+  float: right;
+  margin: 5px;
+  display: inline-block;
 }
