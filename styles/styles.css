@@ -2,6 +2,7 @@
 
 body {
   font-family: "oswald", sans-serif;
+  background-color: #fab038;
 }
 header {
   background-color: #bac5cf;
@@ -101,35 +102,73 @@ nav a:hover {
 }
 
 /* Header image with text */
-.container {
+.container-fluid {
   position: relative;
+  margin: 0 auto;
   text-align: center;
   color: white;
   width: 100%;
   font-family: "Oswald", sans-serif;
-}
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 0px;
   font-size: 40px;
 }
-.container .bottom-left {
+.container-fluid .bottom-left {
   position: absolute;
-  bottom: 30;
+  bottom: 0;
   background: rgb(0, 0, 0);
   background: rgba(10, 10, 10, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 10px 0px;
+  margin-bottom: 11px;
 }
 
-/* Main .section .intro*/
-main {
-  margin: 30px;
+/* MAIN CONTENT */
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
-#img-intro {
+.element {
+  @include clearfix;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: block;
+}
+
+h1 {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* INTRO PART */
+.intro {
+  margin: 10px 10px 10px 15px;
+  float: left;
+}
+
+.img-intro {
   float: right;
-  margin: 5px;
-  display: inline-block;
+  position: relative;
+  display: block;
+  margin: 10px 10px 10px 20px;
+  bottom: 25px;
+}
+
+/* PRE-ORDER PART */
+.preorder {
+  margin: 10px 10px 10px 15px;
+}
+
+.img-preorder {
+  float: left;
+  position: relative;
+  display: block;
+  margin: 10px 15px 0px 0px;
+  bottom: 25px;
 }
