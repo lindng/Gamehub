@@ -229,10 +229,16 @@ h1 {
   position: relative;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 3px;
   background-color: #1b203d;
   color: white;
   border-top: 2px solid #8e8e8e;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #fab038;
 }
