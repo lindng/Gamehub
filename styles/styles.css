@@ -2,16 +2,16 @@
 
 body {
   font-family: "oswald", sans-serif;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
 }
 header {
   background-color: #bac5cf;
-  min-height: 71px;
+  min-height: 82px;
   border-radius: 5px 5px 0px 0px;
 }
 .logo {
-  max-width: 100px;
-  margin: 5px 25px 0px 5px;
+  max-width: 150px;
+  margin: 5px 25px 10px 5px;
 }
 * {
   box-sizing: border-box;
@@ -22,8 +22,8 @@ header {
   display: inline-block;
   padding: 2px 20px;
   font-weight: bold;
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: "oswald";
+  font-size: 18px;
   margin-top: 10px;
   text-align: center;
   border-left: 1px solid #8e8e8e;
@@ -50,26 +50,47 @@ nav,
   display: none;
 }
 
+.logo {
+  max-width: 130px;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  padding: 5px;
+}
 nav ul {
   padding: 0px;
+  text-align: center;
 }
 
 nav li {
   display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  margin-right: 5px;
 }
 
 nav a {
   text-decoration: none;
   color: #1b203d;
-  padding: 15px;
   display: block;
+  font-family: "oswald";
+  font-weight: bold;
+  border-left: 1px solid #8e8e8e;
+  display: inline-block;
+  padding: 2px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 .hamburger-label {
-  float: right;
+  float: left;
   color: #1b203d;
   padding: 10px;
   font-size: 1.5em;
@@ -80,11 +101,42 @@ nav a:hover {
   display: block;
 }
 
+form.example input[type="text"] {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+  float: left;
+  width: 70%;
+  background: #ffffff;
+  text-align: center;
+  margin: 15px 0px 10px 20px;
+}
+
+form.example button {
+  width: 15%;
+  padding: 5px;
+  background: #1b203d;
+  color: white;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  margin: 15px 0px 10px 0px;
+}
+form.example button:hover {
+  background: #fab038;
+}
 /* FULL SCREEN NAV */
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .logo {
     float: left;
+    max-width: 100px;
+    margin: 5px 25px 10px 5px;
   }
+
   nav {
     display: inline-block;
     float: right;
@@ -102,12 +154,13 @@ nav a:hover {
   nav a {
     padding: 2px 20px;
     font-weight: bold;
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: "oswald";
+    font-size: 18px;
     margin-top: 10px;
     text-align: center;
     border-left: 1px solid #8e8e8e;
   }
+
   form.example input[type="text"] {
     padding: 10px;
     font-size: 16px;
@@ -176,12 +229,12 @@ nav a:hover {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   display: block;
 }
 
 h1 {
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 /* INTRO PART */
@@ -224,9 +277,14 @@ h1 {
   font-size: 18px;
   text-align: center;
   display: inline-block;
-  width: 200px;
+  width: 250px;
   float: right;
   position: relative;
+  border-radius: 8px;
+}
+
+#prebutton:hover {
+  opacity: 0.8;
 }
 
 /* FOOTER */
@@ -241,4 +299,113 @@ footer {
 footer a:hover {
   text-decoration: underline;
   color: #fab038;
+}
+
+/* PRE-ORDER PAGE */
+
+#createbutton {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #fab038;
+  border-radius: 8px;
+  color: #fab038;
+  font-family: "oswald";
+  font-size: 16px;
+  float: right;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+#createbutton:hover {
+  background-color: #fab038;
+  color: #fff;
+}
+
+h2 {
+  text-decoration: underline;
+}
+.newgame {
+  margin: 10px 10px 150px 15px;
+  display: block;
+}
+
+.img-preorder2 {
+  float: left;
+  position: relative;
+  display: block;
+  margin: 15px 30px 10px 0px;
+  bottom: 25px;
+  border: 1px solid #e8e8e8;
+}
+
+.img-preorder3 {
+  float: left;
+  position: relative;
+  display: block;
+  margin: 15px 30px 10px 0px;
+  bottom: 25px;
+  border: 1px solid #e8e8e8;
+}
+
+.stars3 {
+  background-color: #000000;
+  color: #fab038;
+}
+
+#star {
+  color: #fab038;
+}
+
+#blank {
+  color: #8e8e8e;
+}
+
+/* SELL YOUR GAME PAGE */
+.intro-sell {
+  margin: 10px 10px 15px 15px;
+  padding-bottom: 10px;
+}
+.img-sellgame {
+  float: right;
+  position: relative;
+  display: block;
+  margin: 30px 30px 10px 45px;
+  bottom: 25px;
+  border: 1px solid #e8e8e8;
+}
+.sellform {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px 10px 15px 15px;
+  font-size: 20px;
+}
+
+form.selling input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "oswald";
+}
+
+.sellbutton {
+  width: 100%;
+  background-color: #fab038;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "oswald";
+}
+
+form.selling input[type="file"] {
+  font-size: 16px;
+  font-family: "oswald";
 }

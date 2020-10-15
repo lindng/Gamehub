@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gamehub - Account</title>
-    <meta name="description" content="Account page." />
+    <title>Gamehub - Pre-order new games</title>
+    <meta name="description" content="This is a page for gamers to pre-order new games." />
     <meta name="viewport" content="width=device.width, initial-scale=1.0" />
-    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0eb7cdb0dc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <a href="index.html"><img src="images/GameHub_Logo.png" class="logo" /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+      </div>
+      <div class="searchbar">
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
       <nav>
         <ul>
-          <a class="navbar-brand" href="index.html">
-            <div class="logo-image">
-                  <img src="images/GameHub_Logo.png" class="logo-image">
-            </div>
-            </a>
-          <li><a href="checkout.html"><img src="images/002-shopping-cart.png" class="icons"></a></li>
-          <li><a href="contact.html" ><img src="images/006-contact.png" class="icons"></a></li> 
-          <li><a href="account.html">Account name<img src="images/008-user.png" class="icons"></a></li>
-          <div class="searchbar"><input type="text" placeholder="Search..">
-          </div>
+            <li>
+              <div class="dropdown">
+                <span><i class="fas fa-gamepad"></i> Games</span>
+                <div class="dropdown-content">
+                  <a href="buygames.html">Buy games</a>
+                  <a href="sellgames.html">Sell games</a>
+                  <a href="preorder.html">Pre-order games</a>
+                </div>
+              </div>
+              </li>
+            <li>
+              <a href="account.html"><i class="fas fa-user-circle"></i> Log in</a></li>
+            <li>
+              <a href="checkout.html"><i class="fas fa-shopping-cart"></i> Check out</a></li>
+          </li>
         </ul>
       </nav>
-      <div class="sidenav">
-        <h2><img src="images/005-gamepad.png" class="icons"> Games </h2>
-        <a href="buygames.html" > Buy games</a>
-        <a href="sellgames.html">Sell games</a>
-        <a href="preorder.html" class="active">Pre-order new games</a>
-      </div>
-      </header>
-    <div class="main">
+    </header>
+    <main>
+      <div class="container-fluid">
+        <img src="images/pcxbox.jpg" alt="Picture of keyboard and a mouse" style="width: 100%; max-height: 100%;">
+        <div class="bottom-left">PRE-ORDER GAMES</div>
+      </div> 
       <div class="container">
-        <img src="images/newheader.jpg" alt="Playstation" style="width: 100%;">
-        <div class="text-block"> 
-          <h1>PRE-ORDER NEW GAMES</h1>
+        <div class="intro">
+          <div class="clearfix"><h1>PRE-ORDER THE LATEST GAME</h1></div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <a href="createaccount.html"><button type="createbutton" id="createbutton">Don't have an account? Create one now. </button></a>
         </div>
-      </div>
-      <h2>This is your account</h2>
-      <h3>Here you can buy, sell and pre-order games. You can get your latest games here first.</h3>
-      <p>Lorem ipsum dolor sit amet
-        Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-        Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-        <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-          Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-          Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-      </p>
+        <div class="newgame">
+          <div class="clearfix"><h1>UPCOMING GAMES IN 2021 </h1></div>
+            <img class="img-preorder2" src="images/2006_FIFA_World_Cup.jpg" alt="Cover of Fifa game 2008" style="width: 200px;" >
+            <h2>FIFA GERMANY</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <div class="Stars2"><i class="fas fa-star" id="star"></i><i class="fas fa-star" id="star"></i><i class="fas fa-star" id="star"></i><i class="fas fa-star" id="star"></i><i class="fas fa-star" id="blank"></i></div>
+            <u>Release date: March 03, 2021</u>
+            <a href="preorderinfo.html"><button type="button" id="prebutton">PRE-ORDER NOW</button></button></a>
+        </div>
+        <div class="newgame">
+          <img class="img-preorder3" src="images/Assassin's_Creed_IV_-_Black_Flag_cover.jpg" alt="Cover of Assasin Creed IV - Black s_Creed_IV_-_Black_Flag_cover" style="width: 200px;" >
+            <h2>ASSASIN CREED IV - BLACK FLAG</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <div class="Stars3"><i class="fas fa-star" id="star"></i><i class="fas fa-star" id="star"></i><i class="fas fa-star" id="star"></i><i class="fas fa-star" id="blank"></i><i class="fas fa-star" id="blank"></i></div>
+            <u>Release date: January 10, 2021</u>
+            <a href="preorderinfo.html"><button type="button" id="prebutton">PRE-ORDER NOW</button></button></a>
+        </div>
     </div>
+  </main>
     <footer>
-      Copyright &copy;
+      <p>Contact us</p>
+      <a href="mailto:Linda@example.com"></a>Gamehub@example.no</p>
     </footer>
   </body>
 </html>
