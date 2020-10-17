@@ -1,53 +1,263 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gamehub - Account</title>
-    <meta name="description" content="Account page." />
+    <title>Gamehub</title>
+    <meta name="description" content="This is a page for gamers." />
     <meta name="viewport" content="width=device.width, initial-scale=1.0" />
-    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0eb7cdb0dc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <a href="index.html"><img src="images/GameHub_Logo.png" class="logo" /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+      </div>
+      <div class="searchbar">
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
       <nav>
         <ul>
-          <a class="navbar-brand" href="index.html">
-            <div class="logo-image">
-                  <img src="images/GameHub_Logo.png" class="logo-image">
-            </div>
-            </a>
-          <li><a href="checkout.html"><img src="images/002-shopping-cart.png" class="icons"></a></li>
-          <li><a href="contact.html"><img src="images/006-contact.png" class="icons"></a></li> 
-          <li><a href="account.html">Account name<img src="images/008-user.png" class="icons"></a></li>
-          <div class="searchbar"><input type="text" placeholder="Search..">
-          </div>
+            <li>
+              <div class="dropdown">
+                <span><i class="fas fa-gamepad"></i> GAMES</span>
+                <div class="dropdown-content">
+                  <a href="buygames.html">BUY GAMES</a>
+                  <a href="sellgames.html">SELL GAMES</a>
+                  <a href="preorder.html">PRE-ORDER GAMES</a>
+                </div>
+              </div>
+              </li>
+            <li>
+              <a href="account.html"><i class="fas fa-user-circle"></i> LOG IN</a></li>
+            <li>
+              <a href="checkout.html"><i class="fas fa-shopping-cart"></i> CHECK OUT</a></li>
+          </li>
         </ul>
       </nav>
-      <div class="sidenav">
-        <h2><img src="images/005-gamepad.png" class="icons"> Games </h2>
-        <a href="buygames.html" class="active"> Buy games</a>
-        <a href="sellgames.html">Sell games</a>
-        <a href="preorder.html">Pre-order new games</a>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <img src="images/whitexbox.jpg" alt="White Xbox console" style="width: 100%; max-height: 100%;">
+        <div class="bottom-left">BUY GAMES</div>
       </div>
-      </header>
-    <div class="main">
-      <div class="container">
-        <img src="images/newheader.jpg" alt="Playstation" style="width: 100%;">
-        <div class="text-block"> 
-          <h1>BUY GAMES</h1>
-        </div>
-      </div>
-      <h2>This is your account</h2>
-      <h3>Here you can buy, sell and pre-order games. You can get your latest games here first.</h3>
-      <p>Lorem ipsum dolor sit amet
-        Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-        Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-        <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-          Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-          Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-      </p>
-    </div>
-    <footer>
-      Copyright &copy;
-    </footer>
+
+          <!-- START OF SINGLE PRODUCT  -->
+          <section class="container">
+            <div class="product-items">
+              <div class ="product">
+                <div class="product-content">
+                  <div class="product-img">
+                    <img src="images/Alice_in_Wonderland_(1985_video_game).jpg" alt="product image" style="width: 200px; height: 270px;">
+                  </div>
+                  <div class="product-btns">
+                    <button type="button" class="btn-cart">Add to cart
+                      <span><i class="fas fa-plus"></i></span></button>
+                    <button type="button" class="btn-buy">Buy now
+                        <span><i class="fas fa-shopping-cart"></i></span></button>
+                  </div>
+                </div>
+  
+                <div class="product-info">
+                  <div class="product-info-top">
+                    <h2 class="sm-title">Playstation</h2>
+                    <div class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </div>
+                  </div>
+                  <a href="#" class="product-name">Alice in Wonderland</a>
+                  <p class="product-info">$39.00</p>
+                </div>
+              </div>
+            </div>
+            <!--END OF A SINGLE PRODUCT -->
+
+            <!--START OF A SINGLE PRODUCT-->
+            <div class="product-items">
+              <div class ="product">
+                <div class="product-content">
+                  <div class="product-img">
+                    <img src="images/Aliens_-_The_Computer_Game_(Software_Studios).jpg" alt="product image" style="width: 200px; height: 270px;">
+                  </div>
+                  <div class="product-btns">
+                    <button type="button" class="btn-cart">Add to cart
+                      <span><i class="fas fa-plus"></i></span></button>
+                    <button type="button" class="btn-buy">Buy now
+                        <span><i class="fas fa-shopping-cart"></i></span></button>
+                  </div>
+                </div>
+  
+                <div class="product-info">
+                  <div class="product-info-top">
+                    <h2 class="sm-title">PC</h2>
+                    <div class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </div>
+                  </div>
+                  <a href="#" class="product-name">Aliens - The Computer game</a>
+                  <p class="product-info">$79.00</p>
+                </div>
+              </div>
+            </div>
+            <!--END OF A SINGLE PRODUCT-->
+
+            <!--START OF SINGLE PRODUCTR-->
+            <div class="product-items">
+              <div class ="product">
+                <div class="product-content">
+                  <div class="product-img">
+                    <img src="images/Black_cover_art.jpg" alt="product image" style="width: 200px; height: 270px">
+                  </div>
+                  <div class="product-btns">
+                    <button type="button" class="btn-cart">Add to cart
+                      <span><i class="fas fa-plus"></i></span></button>
+                    <button type="button" class="btn-buy">Buy now
+                        <span><i class="fas fa-shopping-cart"></i></span></button>
+                  </div>
+                </div>
+  
+                <div class="product-info">
+                  <div class="product-info-top">
+                    <h2 class="sm-title">Playstation</h2>
+                    <div class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </div>
+                  </div>
+                  <a href="#" class="product-name">Black game</a>
+                  <p class="product-info">$79.00</p>
+                </div>
+              </div>
+            </div>
+            <!--END OF A SINGLE PRODUCT -->
+
+            <!--START OF A SINGLE PRODUCT-->
+            <div class="product-items">
+              <div class ="product">
+                <div class="product-content">
+                  <div class="product-img">
+                    <img src="images/Call_of_Duty_WWII_Cover_Art.jpg" alt="product image" style="width: 200px; height: 270px">
+                  </div>
+                  <div class="product-btns">
+                    <button type="button" class="btn-cart">Add to cart
+                      <span><i class="fas fa-plus"></i></span></button>
+                    <button type="button" class="btn-buy">Buy now
+                        <span><i class="fas fa-shopping-cart"></i></span></button>
+                  </div>
+                </div>
+  
+                <div class="product-info">
+                  <div class="product-info-top">
+                    <h2 class="sm-title">Playstation</h2>
+                    <div class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star" style="color: #404040;"></i></span>
+                      <span><i class="fas fa-star" style="color: #404040;"></i></span>
+                    </div>
+                  </div>
+                  <a href="#" class="product-name">Call Call of Duty WWII</a>
+                  <p class="product-info">$79.00</p>
+                </div>
+              </div>
+            </div>
+            <!--END OF A SINGLE PRODUCT-->
+
+            <!--START OF A SINGLE PRODUCT-->
+            <div class="product-items">
+              <div class ="product">
+                <div class="product-content">
+                  <div class="product-img">
+                    <img src="images/starwars.jp.jpg" alt="product image" style="width: 200px; height: 270px">
+                  </div>
+                  <div class="product-btns">
+                    <button type="button" class="btn-cart">Add to cart
+                      <span><i class="fas fa-plus"></i></span></button>
+                    <button type="button" class="btn-buy">Buy now
+                        <span><i class="fas fa-shopping-cart"></i></span></button>
+                  </div>
+                </div>
+  
+                <div class="product-info">
+                  <div class="product-info-top">
+                    <h2 class="sm-title">Playstation</h2>
+                    <div class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star" ></i></span>
+                      <span><i class="fas fa-star" style="color: #404040";></i></span>
+                    </div>
+                  </div>
+                  <a href="#" class="product-name">Star Wars</a>
+                  <p class="product-info">$79.00</p>
+                </div>
+              </div>
+            </div>
+            <!--END OF A SINGLE PRODUCT-->
+            <!--START OF A SINGLE PRODUCT-->
+            <div class="product-items">
+              <div class ="product">
+                <div class="product-content">
+                  <div class="product-img">
+                    <img src="images/Call_of_Duty_WWII_Cover_Art.jpg" alt="product image" style="width: 200px; height: 270px">
+                  </div>
+                  <div class="product-btns">
+                    <button type="button" class="btn-cart">Add to cart
+                      <span><i class="fas fa-plus"></i></span></button>
+                    <button type="button" class="btn-buy">Buy now
+                        <span><i class="fas fa-shopping-cart"></i></span></button>
+                  </div>
+                </div>
+  
+                <div class="product-info">
+                  <div class="product-info-top">
+                    <h2 class="sm-title">Playstation</h2>
+                    <div class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star" style="color: #404040;"></i></span>
+                      <span><i class="fas fa-star" style="color: #404040;"></i></span>
+                    </div>
+                  </div>
+                  <a href="#" class="product-name">Call Call of Duty WWII</a>
+                  <p class="product-info">$79.00</p>
+                </div>
+              </div>
+            </div>
+            <!--END OF A SINGLE PRODUCT-->
+          </section>
+      
+      
+    
+
+  </main>
   </body>
+
+  <footer>
+    <p>Contact us</p>
+    <a href="mailto:Linda@example.com"></a>Gamehub@example.no</p>
+  </footer>
+
 </html>

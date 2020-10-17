@@ -409,3 +409,87 @@ form.selling input[type="file"] {
   font-size: 16px;
   font-family: "oswald";
 }
+
+/* GAME PAGE */
+
+.games h1 {
+  text-align: center;
+}
+li {
+  display: inline-block;
+}
+
+#newgames,
+#usedgames,
+#allgames {
+  text-align: center;
+  padding: 10px 35px;
+  font-size: 18px;
+  margin: 10px 20px;
+  background-color: #1b203d;
+  color: #fab038;
+}
+
+#newgames:hover,
+#usedgames:hover,
+#allgames:hover {
+  opacity: 0.6;
+}
+
+.games:active {
+  background-color: #ffffff;
+  color: #fab038;
+}
+#games {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+/* FLEX BOX PRODUCTS */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-items {
+  margin: 15px;
+}
+.btn-cart {
+  padding: 5px;
+  background-color: #fab038;
+  color: #fff;
+  font-size: 14px;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #fa9b00;
+}
+
+.btn-buy {
+  padding: 5px;
+  background-color: #00bf25;
+  color: #fff;
+  font-size: 14px;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #00a520;
+}
+
+.btn-cart:hover,
+.btn-buy:hover {
+  opacity: 0.6;
+}
+
+.sm-title {
+  margin-bottom: 2px;
+}
+
+.rating span {
+  color: #fab038;
+}
