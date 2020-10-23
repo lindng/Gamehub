@@ -1,0 +1,64 @@
+header {
+  background-color: rosybrown;
+  min-height: 100px;
+}
+.logo {
+  max-width: 100px;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  display: block;
+}
+
+.hamburger-label {
+  float: right;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+
+/* FULL SCREEN */
+@media (min-width: 600px) {
+  body {
+    background-color: orange;
+  }
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  nav a 
+}
