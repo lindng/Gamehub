@@ -449,22 +449,57 @@ footer {
 
 /* SELL GAMES PAGE */
 
+.textbox {
+  display: grid;
+  grid-template-columns: 500px 40%;
+  grid-template-rows: 1fr;
+  grid-gap: 50px 10px;
+  justify-content: center;
+  grid-template-areas: "img-col intro-sell";
+  margin-bottom: 50px;
+}
+
+.intro-sell {
+  grid-area: intro-sell;
+  padding: 10px;
+}
+
+.img-col {
+  grid-area: img-col;
+}
+
+.btn-col {
+  grid-area: btn-col;
+}
+
 .img-sellgame {
-  max-width: 450px;
+  max-width: 500px;
 }
 .sellform {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.sellform h2 {
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 30px;
 }
 .selling {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .selling input {
-  max-width: 70%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  background-color: #e9e9e9;
 }
 
 .selling :placeholder-shown {
@@ -478,10 +513,30 @@ footer {
 
 .selling .sellbutton {
   padding: 20px;
-  max-width: 70%;
+  max-width: 100%;
   background-color: var(--orange);
   color: #ffffff;
   font-weight: bold;
+  margin-top: 20px;
+  border: none;
+}
+
+@media screen and (max-width: 850px) {
+  .textbox {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+
+  .img-sellgame {
+    text-align: center;
+    width: 100%;
+  }
+
+  .intro-sell {
+    text-align: center;
+    padding: 20px;
+  }
 }
 
 /* PRE-ORDER PAGE */

@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="images/new-small-logo-2.png" class="logo"></a>
+      <a href="index.html"><img src="images/new-small-logo-2.png" class="logo" alt="Brand's logo"></a>
       <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu">
      <nav>
@@ -40,22 +40,24 @@
     </header>
 
     <main>
-      <div class="container">
+      
         <div class="title-name">
           <h1>SELL YOUR GAMES AND EARN SOME MONEY</h1>
         </div>
-       <div class="intro-sell">
-        <div class="text-col">
+       <div class="textbox">
+         <div class="intro-sell">
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum doloremque, rerum nobis cupiditate voluptatem dolores ratione repudiandae? Deserunt excepturi harum dolorem saepe beatae officia nostrum inventore labore earum nisi, voluptatum itaque corrupti unde consequuntur aliquid suscipit sint dolores assumenda accusantium! At pariatur eveniet a omnis qui similique id atque corrupti, harum minima labore, exercitationem dolore? Animi, voluptate magnam debitis vitae reprehenderit recusandae maiores non beatae autem, neque eaque veritatis.</p>
            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+           <a href="createaccount.html"><button type="button" id="createbtn">Don't have an account? Create one now.</button></a>
          </div>
          <div class="img-col"> 
           <img class="img-sellgame" src="images/consoles.jpg" alt="Playstation consoles swap"> 
          </div>  
-       </div>
-
+        </div>
+        
+      <div class="container">
         <div class="sellform">
-          <h1>Fill in the information</h1>
+          <h2>Fill in the information</h2>
           <form class="selling" action="sellaction.php" method="GET">
             <label for="Title">Title:</label>
               <input type="text" name="Title" maxlength="30" required="required" placeholder="Title of the game">
