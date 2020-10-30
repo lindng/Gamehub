@@ -11,9 +11,10 @@
   --grey: #bfbfbf;
 }
 
+/* MOBILE VERSION - NAVBAR */
+
 body {
   font-family: "oswald", sans-serif;
-  background-color: #f1f1f1;
 }
 
 header {
@@ -77,7 +78,7 @@ nav .loginbtn a {
 
 @media (min-width: 980px) {
   body {
-    background-color: #f0efef;
+    background-color: #ffffff;
   }
 
   header {
@@ -215,13 +216,13 @@ nav .loginbtn a {
   text-shadow: 4px 2px 5px #000000;
 }
 
-/* MAIN */
+/* MAIN INDEX */
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 1fr 1fr 300px;
-  grid-row-gap: 80px;
+  grid-template-rows: 15% 1fr 1fr 300px;
+  grid-row-gap: 40px;
   grid-column-gap: 100px;
   grid-template-areas:
     "textbox-container1 textbox-container1"
@@ -229,22 +230,19 @@ nav .loginbtn a {
     "textbox-container4 textbox-container4"
     "textbox-container5 textbox-container5";
   justify-content: space-between;
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .textbox-container1 {
   grid-area: textbox-container1;
+  padding: 10px 50px;
   justify-self: center;
   max-width: 100%;
-  height: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   text-align: center;
   background-color: #ffffff;
-  color: #000000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #333333;
 }
 
 .textbox-container1 h1 {
@@ -255,6 +253,7 @@ nav .loginbtn a {
 
 .textbox-container2 {
   grid-area: textbox-container2;
+  padding: 20px;
   justify-self: center;
   max-width: 100%;
   display: flex;
@@ -262,8 +261,7 @@ nav .loginbtn a {
   flex-direction: column;
   text-align: center;
   background-color: #ffffff;
-  color: #000000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #333333;
 }
 
 .textbox-container2 h1 {
@@ -275,14 +273,14 @@ nav .loginbtn a {
 .textbox-container3 {
   grid-area: textbox-container3;
   justify-self: center;
+  padding: 20px;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
   background-color: #ffffff;
-  color: #000000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #333333;
 }
 
 .textbox-container3 h1 {
@@ -293,15 +291,12 @@ nav .loginbtn a {
 
 .textbox-container4 {
   grid-area: textbox-container4;
+  padding: 20px;
   justify-self: center;
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  width: 100%;
   text-align: center;
   background-color: #ffffff;
-  color: #000000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #333333;
 }
 
 .textbox-container4 h1 {
@@ -314,14 +309,10 @@ nav .loginbtn a {
   grid-area: textbox-container5;
   justify-self: center;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   text-align: center;
   padding: 10px;
-  color: #000000;
+  color: #333333;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .textbox-container5 h1 {
@@ -335,34 +326,27 @@ nav .loginbtn a {
   margin: 10px;
 }
 
-.text-col {
-  padding: 20px;
-}
-
 .img-all {
-  max-width: 100%;
-  height: 400px;
-  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px 5px 0px 0px;
   object-fit: cover;
 }
 
-#btn {
+.btn {
   background-color: var(--orange);
-  width: 200px;
   padding: 15px;
-  border-radius: 5px;
+  border: none;
   color: #ffffff;
-  border: 1px solid var(--dark-blue);
   font-size: 15px;
   font-weight: 800;
-  text-decoration: underline;
-  margin: 10px;
-  margin-left: 0px;
+  margin: 30px;
+  width: 200px;
 }
 
-#btn:hover {
-  background-color: #fab038;
-  color: #ffffff;
+.btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--orange);
 }
 
 .trndgames {
@@ -387,16 +371,16 @@ nav .loginbtn a {
   .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 1fr 1fr 1fr 500px;
+    grid-template-rows: 15% 1fr 1fr 1fr 20%;
     grid-row-gap: 20px;
     grid-template-areas:
       "textbox-container1"
       "textbox-container2"
       "textbox-container3"
       "textbox-container4"
-      "textbox-container5"
       "textbox-container5";
     justify-content: space-between;
+    margin-bottom: 10px;
   }
 
   .img-all {
@@ -412,13 +396,12 @@ nav .loginbtn a {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 350px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "textbox-container1"
       "textbox-container2"
       "textbox-container3"
       "textbox-container4"
-      "textbox-container5"
       "textbox-container5";
     justify-content: center;
   }
@@ -426,14 +409,9 @@ nav .loginbtn a {
     grid-area: textbox-container1;
     justify-self: center;
     max-width: 100%;
-    height: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     text-align: center;
     background-color: #ffffff;
     color: #000000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .img-all {
@@ -447,20 +425,16 @@ nav .loginbtn a {
 @media screen and (max-width: 400px) {
   .container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 500px 700px 700px 700px 1fr;
+    grid-template-columns: 300px;
+    grid-template-rows: 18% 700px 700px 20% 30%;
     grid-template-areas:
       "textbox-container1"
       "textbox-container2"
       "textbox-container3"
       "textbox-container4"
-      "textbox-container5"
       "textbox-container5";
     justify-content: center;
-  }
-  .textbox-container1 {
-    max-width: 100%;
-    height: 500px;
+    margin-bottom: 120px;
   }
 }
 
@@ -588,10 +562,32 @@ footer {
 
 /* GAMEPAGE */
 
+.title-name {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.title-name h1 {
+  border-bottom: 1px solid #ababab;
+  margin-bottom: 5px;
+}
+
 .filter {
-  text-align: right;
   padding: 10px;
   color: var(--orange);
+  text-align: right;
+  margin-right: 30px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.filter a {
+  color: var(--orange);
+  padding: 10px;
+}
+
+.filter a:hover {
+  font-size: larger;
 }
 
 .products {
@@ -601,13 +597,23 @@ footer {
   flex-grow: 1;
   text-align: center;
   flex: 1 1 0;
+  justify-content: space-around;
+  margin: 0 10%;
 }
 
 .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
+}
+
+.item:hover {
+  background-color: #b6b6b6;
+}
+
+.item a {
+  color: #000000;
 }
 
 .item .cart-btn {
@@ -622,4 +628,22 @@ footer {
 
 .item .cart-btn:hover {
   background-color: seagreen;
+}
+
+.nextpage {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.nextpage a {
+  padding: 10px;
+  margin: 10px 5px;
+  color: #000000;
+}
+
+.nextpage a:hover {
+  background-color: var(--orange);
 }
