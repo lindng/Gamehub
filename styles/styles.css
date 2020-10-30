@@ -15,6 +15,7 @@
 
 body {
   font-family: "oswald", sans-serif;
+  background-color: #e9e9e9;
 }
 
 header {
@@ -78,7 +79,7 @@ nav .loginbtn a {
 
 @media (min-width: 980px) {
   body {
-    background-color: #ffffff;
+    background-color: #eeeeee;
   }
 
   header {
@@ -328,7 +329,7 @@ nav .loginbtn a {
 
 .img-all {
   width: 100%;
-  height: 300px;
+  height: 350px;
   border-radius: 5px 5px 0px 0px;
   object-fit: cover;
 }
@@ -456,7 +457,7 @@ footer {
   grid-gap: 50px 10px;
   justify-content: center;
   grid-template-areas: "img-col intro-sell";
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .intro-sell {
@@ -499,7 +500,7 @@ footer {
 .selling input {
   padding: 10px;
   font-size: 18px;
-  background-color: #e9e9e9;
+  background-color: #ffffff;
 }
 
 .selling :placeholder-shown {
@@ -541,7 +542,7 @@ footer {
 
 /* PRE-ORDER PAGE */
 
-.container {
+.container-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -549,8 +550,13 @@ footer {
   flex-wrap: wrap;
 }
 
-.title-name {
+.container-form .title-name {
   text-align: center;
+  padding: 15px 30px;
+}
+
+.title-name h2 {
+  border-bottom: 1px solid #ababab;
 }
 #createbtn {
   background-color: #ffffff;
@@ -577,7 +583,6 @@ footer {
   margin-left: 20px;
   border-bottom: 1px solid #c9c9c9;
   margin-bottom: 20px;
-  background-color: #e9e9e9;
   padding: 5px;
 }
 
@@ -625,10 +630,26 @@ footer {
   font-size: 14px;
   border: none;
   width: 200px;
+  color: #ffffff;
 }
 
 #prebutton:hover {
   background-color: #33cc33;
+}
+
+@media screen and (max-width: 400px) {
+  .newgame {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+
+  .container-form {
+    text-align: center;
+  }
 }
 
 /* GAMEPAGE */
@@ -717,4 +738,78 @@ footer {
 
 .nextpage a:hover {
   background-color: var(--orange);
+}
+
+/* CHECK OUT PAGE */
+
+.check-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr;
+  justify-items: center;
+}
+
+.check-product {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.check-img {
+  width: 180px;
+  height: 250px;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.check-info {
+  align-self: center;
+  font-size: 20px;
+}
+
+.check-info p {
+  color: var(--orange);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.pay-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-left: #ababab 1px solid;
+  height: 260px;
+  justify-content: center;
+  text-align: center;
+}
+
+.continue-btn {
+  background-color: #fab038;
+  width: 200px;
+  text-align: center;
+  padding: 5px 0px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  border-right: 2px;
+  margin: 10px;
+}
+
+.continue-btn:hover {
+  background-color: seagreen;
+}
+
+.back-btn {
+  color: var(--orange);
+  padding: 5px;
+}
+
+.back-btn:hover {
+  color: #000000;
+}
+
+.delete {
+  color: #ff0e0e;
 }
