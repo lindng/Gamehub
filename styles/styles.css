@@ -749,6 +749,10 @@ footer {
   justify-items: center;
 }
 
+.check-info h2 {
+  color: #000000;
+}
+
 .check-product {
   display: flex;
   flex-wrap: wrap;
