@@ -12,12 +12,10 @@
 }
 
 /* MOBILE VERSION - NAVBAR */
-
 body {
   font-family: "oswald", sans-serif;
   background-color: #e9e9e9;
 }
-
 header {
   background-color: var(--dark-blue);
   position: relative;
@@ -369,77 +367,6 @@ nav .loginbtn a {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 900px) {
-  .container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 1fr 1fr 1fr 20%;
-    grid-row-gap: 20px;
-    grid-template-areas:
-      "textbox-container1"
-      "textbox-container2"
-      "textbox-container3"
-      "textbox-container4"
-      "textbox-container5";
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-
-  .img-all {
-    max-width: 100%;
-    height: 250px;
-    border-radius: 5px;
-    margin: 15px 0;
-    object-fit: cover;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15% 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "textbox-container1"
-      "textbox-container2"
-      "textbox-container3"
-      "textbox-container4"
-      "textbox-container5";
-    justify-content: center;
-  }
-  .textbox-container1 {
-    grid-area: textbox-container1;
-    justify-self: center;
-    max-width: 100%;
-    text-align: center;
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-  .img-all {
-    max-width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    object-fit: cover;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .container {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 18% 700px 700px 20% 30%;
-    grid-template-areas:
-      "textbox-container1"
-      "textbox-container2"
-      "textbox-container3"
-      "textbox-container4"
-      "textbox-container5";
-    justify-content: center;
-    margin-bottom: 120px;
-  }
-}
-
 footer {
   background-color: #1b203d;
   width: auto;
@@ -521,24 +448,6 @@ footer {
   font-weight: bold;
   margin-top: 20px;
   border: none;
-}
-
-@media screen and (max-width: 850px) {
-  .textbox {
-    display: flex;
-    flex-direction: column;
-    margin: 50px 20px;
-  }
-
-  .img-sellgame {
-    text-align: center;
-    width: 100%;
-  }
-
-  .intro-sell {
-    text-align: center;
-    padding: 20px;
-  }
 }
 
 /* PRE-ORDER PAGE */
@@ -636,21 +545,6 @@ footer {
 
 #prebutton:hover {
   background-color: #33cc33;
-}
-
-@media screen and (max-width: 400px) {
-  .newgame {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    border-bottom: 1px solid #c9c9c9;
-    margin-bottom: 20px;
-    padding: 5px;
-  }
-
-  .container-form {
-    text-align: center;
-  }
 }
 
 /* GAMEPAGE */
@@ -837,19 +731,6 @@ footer {
   width: 100%;
 }
 
-@media screen and (max-width: 400px) {
-  .check-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-  }
-
-  .pay-container {
-    border: none;
-  }
-}
-
 /* SUCESS PAGE */
 .sucess-box {
   background-color: var(--orange);
@@ -924,7 +805,62 @@ footer {
   padding: 7px;
   cursor: pointer;
 }
-@media screen and (max-width: 700px) {
+
+/* IPAD VERSION ONLY */
+
+@media screen and (max-width: 900px) {
+  /*FRONT PAGE - IPAD VERS */
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 1fr 1fr 1fr 20%;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "textbox-container1"
+      "textbox-container2"
+      "textbox-container3"
+      "textbox-container4"
+      "textbox-container5";
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .img-all {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin: 15px 0;
+    object-fit: cover;
+  }
+  .textbox-container5 {
+    grid-area: textbox-container5;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #333333;
+    background-color: #ffffff;
+  }
+
+  /* SELL PAGE  */
+  .textbox {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+    text-align: center;
+  }
+
+  .img-sellgame {
+    text-align: center;
+    width: 100%;
+  }
+
+  .intro-sell {
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* PRDUCT PAGE*/
   .prod-container {
     display: flex;
     flex-direction: column;
@@ -932,6 +868,52 @@ footer {
 
   .prod-image {
     padding: 5px;
+    text-align: center;
+  }
+}
+
+/* MOBILE VERSION ONLY */
+
+@media screen and (max-width: 450px) {
+  /*FRONT PAGE */
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 18% 20% 22% 23%;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "textbox-container1"
+      "textbox-container2"
+      "textbox-container3"
+      "textbox-container4"
+      "textbox-container5";
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  /* CHECK OUT*/
+  .check-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .pay-container {
+    border: none;
+  }
+
+  /*PRE ORDER PAGE*/
+  .newgame {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+
+  .container-form {
     text-align: center;
   }
 }
